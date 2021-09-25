@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/avatar.png" class="avatar" alt="avatar">
+        <div class="box">
+            <h1> Мой сайт</h1>
+        </div>
+    </header>
+    <div class="main">
+        <nav class="nav">
+            <ul>
+                <li class="list1">
+                    <a href="http://127.0.0.1:5500/index.html">Первая ссылка</a>
+                </li>
+                <li class="list1">
+                    <a href="/">Вторая </a>
+                </li>
+                <li class="list1">
+                    <a href="#submit">Третья</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="list">
+            <ol>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html">На главную</a>
+                </li>
+                <li>
+                    <a href="https://127.0.0.1:5500/index.html">На главную https</a>
+                </li>
+                <li>
+                    <a href="ftp://127.0.0.1:5500/index.html">FTP без авторизации</a>
+                </li>
+                <li>
+                    <a href="ftp://user:password@127.0.0.1:5500/index.html">FTP с авторизацией</a>
+                </li>
+                <li>
+                    <a href="https://www.kubsu.ru/">Ссылка на кубгу</a>
+                </li>
+                <li>
+                    <a href="#submit"> Ссылка на кнопку "отправить"</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/about/contacts"> Ссылка с двумя параметрами</a>
+                </li>
+                <li>
+                    <ol>
+                        <li>
+                            <a href="http://127.0.0.1:5500/about" title="about">about</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/about" title="contacts">contacts</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a>без href</a>
+                </li>
+                <li>
+                    <a href="">пустая ссылка</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html" rel="nofollow">запрещен переход</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html" rel="nofollow" content="noindex">запрещенная для
+                        индексации</a>
+                </li>
+                <li>
+                    <p>это контекстная <a href="http://127.0.0.1:5500/index.html">ссылка</a></p>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.htm"><img src="img/image.jpg" width="300" height="200"
+                            alt="картинка" class="image"></a>
+                </li>
+                <li>
+                    <img src="img/image.jpg" width="300" height="200" alt="картинка" usemap="#map" class="image">
+                    <map name="map">
+                        <area shape="circle" coords="230,340,100" href="circle.html" alt="circle">
+                        <area shape="rect" coords="50,50,210,210" href="rect.html" alt="rect">
+                    </map>
+                </li>
+                <li>
+                    <a href="news"> ссылка на страницу в текущем каталоге</a>
+                </li>
+                <li>
+                    <a href="about/news">на страницу в каталоге about</a>
+                </li>
+                <li>
+                    <a href="../news">на уровень выше</a>
+                </li>
+                <li>
+                    <a href="../../news">на два уровня выше</a>
+                </li>
+                <li>
+                    <a href="/">сокращенная на главную</a>
+                </li>
+                <li>
+                    <a href="/index.html">сокращенная на внутреннюю</a>
+                </li>
+            </ol>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th> 1</th>
+                    <th> 2</th>
+                    <th> 3</th>
+                </tr>
+                <tr class="nechet">
+                    <td colspan="3">Ячейка 11 Ячейка 12 Ячейка 13</td>
+                </tr>
+                <tr class="chet">
+                    <td colspan="3">Ячейка 21 Ячейка 22 Ячейка 23</td>
+                </tr>
+                <tr class="nechet">
+                    <td colspan="3">Ячейка 31 Ячейка 32 Ячейка 33</td>
+                </tr>
+                <tr class="chet">
+                    <td colspan="3">Ячейка 41 Ячейка 42 Ячейка 43</td>
+                </tr>
+                <tr class="nechet">
+                    <td colspan="3">Ячейка 51 Ячейка 52 Ячейка 53</td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <form action="/" method="POST">
+
+                <label>
+                    Имя:<br>
+                    <input name="field-name-1">
+                </label><br>
+
+                <label>
+                    email:<br>
+                    <input name="field-email" type="email">
+                </label><br>
+
+                <label>
+                    Дата рождения:<br>
+                    <input name="field-date" type="date">
+                </label><br>
+
+                Пол:<br>
+                <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
+                    Мужской</label>
+                <label><input type="radio" name="radio-group-1" value="Значение2" />
+                    Женский</label><br>
+
+                Количество конечностей:<br>
+                <label><input type="radio" checked="checked" name="radio-group-2" value="Значение1" />
+                    Одно</label><br>
+                <label><input type="radio" name="radio-group-2" value="Значение2" />
+                    Два</label><br>
+                <label><input type="radio" name="radio-group-2" value="Значение3" />
+                    Три</label><br>
+                <label><input type="radio" name="radio-group-2" value="Значение4" />
+                    Четыре</label><br>
+
+                <label>
+                    Биография:<br>
+                    <textarea name="field-name-2"></textarea>
+                </label><br>
+
+                <label>
+                    Сверхспособности:
+                    <br>
+                    <select name="field-name-4[]" multiple="multiple">
+                        <option value="Значение1">бессмертие</option>
+                        <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+                        <option value="Значение3" selected="selected">левитация</option>
+                    </select>
+                </label><br>
+
+                Чекбокс:<br>
+                <label><input type="checkbox" checked="checked" name="check-1">
+                    С контрактом ознакомлен (а)</label><br>
+
+                Кнопка «Отправить»<br>
+                <input id="#submit" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h4 class="name"> (с) Олег</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    background-color: rgb(175, 238, 238);
+    height: 100px;
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(186, 85, 211);
+    padding: 10px;
+    height: 100px;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.box {
+    margin: auto;
+    padding-right: 40%;
+}
+
+.avatar {
+    margin-left: 25%;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.nav {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 222, 173);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    order: 1;
+}
+
+.list {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 222, 173);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    order: 2;
+}
+
+.form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 222, 173);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    order: 4;
+}
+
+.table {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 222, 173);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    order: 3;
+}
+
+.list1 {
+    font-size: 20px;
+    padding: 0 80px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.chet {
+    background-color: #E9967A;
+}
+
+.nechet {
+    background-color: #BC8F8F;
+}
+
+.name {
+    margin: auto;
+    font-size: 24px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+
+    .nav,
+    .list,
+    .form {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav,
+    .table,
+    .list,
+    .form {
+        display: block;
+        width: 960px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav,
+    .table,
+    .list,
+    .form {
+        width: 720px;
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav,
+    .table,
+    .list,
+    .form {
+        width: 540px;
+    }
+
+
+
+}
+
+@media screen and (max-width:575px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nav,
+    .table,
+    .list,
+    .form {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .list1 {
+        padding: 0 2%;
+    }
+
+    .form {
+        order: 3;
+    }
+
+    .table {
+        order: 4;
+    }
+}
